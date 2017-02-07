@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compare Countries</title>
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.10.2/sass.min.js"></script>
+	<!-- <<link rel="alternate" href="country_compare.css"> -->
+	<link rel="stylesheet" type="text/css" href="country_compare.css">
+	<script src="compare_countries/mustache.min.js" charset="utf-8"></script> 
+	<script type="text/javascript" src="country_compare.js"></script>
+</head>
+<body>
+	<nav>
+		<div class="container">
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Compare Countries</a>
+			</div>
+		</div>
+	</nav>
+	<div id="loader" class="section center">
+		<div class="preloader-wrapper big active">
+			<div class="spinner-layer spinner-red	-only">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div><div class="gap-patch">
+				<div class="circle"></div>
+			</div><div class="circle-clipper right">
+			<div class="circle"></div>
+		</div>
+	</div>
+</div>
+<p class="red-text">Please wait.Page is loading</p>
+</div>
+<div class="container hide" id="content">
+	<div class="row">
+		<!-- <script id="countryTemplate" type="x-tmpl-mustache">	 -->
+		<div class="col s6 country" id="country-0">
+			<h2>
+				<span class="new"></span>
+				<a class="btn-floating btn-small waves-effect red lighten-2 modal-trigger" href="#" data-country-index="0"><i class="material-icons">mode_edit</i></a>
+			</h2>
+			<p class="name flow-text"></p>
+			<div class="card red lighten-4 population">
+				<div class="card-content red-text">
+					<span class="card-title">Population</span>
+					<p></p>
+				</div>
+			</div>
+			<div class="card red lighten-4 area">
+				<div class="card-content red-text">
+					<span class="card-title">Area</span>
+					<p></p>
+				</div>
+			</div>
+			<div class="card red lighten-4 populationDensity">
+				<div class="card-content red-text">
+					<span class="card-title">Population Density</span>
+					<p></p>
+				</div>
+			</div>
+			<div class="card red lighten-4 gini">
+				<div class="card-content red-text">
+					<span class="card-title">Gini Coefficient</span>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</script>
+	<div class="col s6 country" id="country-1">
+		<h2>
+			<span class="new"></span>
+			<a class="btn-floating btn-small waves-effect red lighten-2 modal-trigger" href="#" data-country-index="1"><i class="material-icons">mode_edit</i></a>
+		</h2>
+		<p class="name flow-text"></p>
+			<div class="card red lighten-4 population">
+				<div class="card-content red-text">
+					<span class="card-title">Population</span>
+					<p></p>
+				</div>
+			</div>
+			<div class="card red lighten-4 area">
+				<div class="card-content red-text">
+					<span class="card-title">Area</span>
+					<p></p>
+				</div>
+			</div>
+			<div class="card red lighten-4 populationDensity">
+				<div class="card-content red-text">
+					<span class="card-title">Population Density</span>
+					<p></p>
+				</div>
+			</div>
+			<div class="card red lighten-4 gini">
+				<div class="card-content red-text">
+					<span class="card-title">Gini Coefficient</span>
+					<p></p>
+				</div>
+			</div>
+	</div>
+</div>
+</div>
+</div>
+<div id="edit-country-modal" class="modal bottom-sheet">
+	<div class="modal-content">
+		<h4>Choose a county</h4>
+		<!-- <p>example paragraphs</p> -->
+		<div class="collection">
+			<a href="#" class="collection-item">dummy</a>
+		</div> 
+	</div>
+</div>
+</body>
+</html>
